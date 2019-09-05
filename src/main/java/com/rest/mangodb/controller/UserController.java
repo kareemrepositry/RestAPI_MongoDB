@@ -54,6 +54,9 @@ public class UserController {
 		
 		System.out.println(" User Details"+user.getFirstname()+" "+user.getLastname()+" "+user.getAddress());
 		
+		//added by karim
+		System.out.println(" User Details"+user.getFirstname()+" "+user.getLastname()+" "+user.getAddress());
+	
 		//added by venkat
 		System.out.println(" User Details"+user.getFirstname()+" "+user.getLastname()+" "+user.getAddress());
 		
