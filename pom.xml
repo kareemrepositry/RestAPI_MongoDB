@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.rest.mangodb.example</groupId>
-	<artifactId>rest_mangodb</artifactId>
+	<artifactId>rest_api_mangodb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>rest_mangodb</name>
+	<name>rest_api_mangodb</name>
 	<description>Demo project on rest and mangodb</description>
 
 	<properties>
