@@ -38,11 +38,10 @@ public class UserController {
 	public List<User> getAllUsers() {
 		return userRepositry.findAll();
 	}
-
+	
 	@PostMapping("/create")
 	public User createUser(@RequestBody User user) {
 		return userRepositry.save(user);
-
 	}
 
 	@GetMapping("/{id}")
@@ -52,6 +51,9 @@ public class UserController {
 
 	@PutMapping("/{id}")
 	public void updateUserByID(@PathVariable("id") String id, @Valid @RequestBody User user) {
+		
+		System.out.println(" User Details"+user.getFirstname()+" "+user.getLastname()+" "+user.getAddress());
+		
 		Update upd=new Update().set("firstname",user.getFirstname()).set("address", user.getAddress())
 				.set("lastname", user.getLastname());
 		mongotemplate.updateFirst(new Query(Criteria.where("id").is(id)), upd, User.class);
