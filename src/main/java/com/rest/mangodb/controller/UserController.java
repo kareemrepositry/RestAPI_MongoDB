@@ -54,6 +54,9 @@ public class UserController {
 		
 		System.out.println(" User Details"+user.getFirstname()+" "+user.getLastname()+" "+user.getAddress());
 		
+		//added by venkat
+		System.out.println(" User Details"+user.getFirstname()+" "+user.getLastname()+" "+user.getAddress());
+		
 		Update upd=new Update().set("firstname",user.getFirstname()).set("address", user.getAddress())
 				.set("lastname", user.getLastname());
 		mongotemplate.updateFirst(new Query(Criteria.where("id").is(id)), upd, User.class);
