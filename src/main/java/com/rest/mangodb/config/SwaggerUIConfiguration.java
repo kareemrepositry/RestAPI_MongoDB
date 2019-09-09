@@ -32,7 +32,7 @@ public class SwaggerUIConfiguration {
                 "Spring Boot REST API Mongo DB",
                 "1.0",
                 "Terms of service",
-                new Contact("Karimulla Khan", "kareemRepositry", "karimullakhan@springfrmework"),
+                new Contact("Karimulla Khan", "kareem Repositry", "karimullakhan@springfrmework"),
                 null,
                 null);
         return apiInfo;

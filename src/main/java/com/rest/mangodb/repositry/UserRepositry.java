@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.repository.Query;
 
 import com.rest.mangodb.models.User;
 
+
 public interface UserRepositry extends MongoRepository<User,String> {
 	
 	User findBy_id(ObjectId id);

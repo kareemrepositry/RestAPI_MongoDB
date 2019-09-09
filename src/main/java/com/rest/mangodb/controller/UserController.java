@@ -88,7 +88,5 @@ public class UserController {
 	public User getUserByName(@PathVariable("name") String name) {
 		return userRepositry.findByfirstname(name);
 	}
-	
-	
 
 }
